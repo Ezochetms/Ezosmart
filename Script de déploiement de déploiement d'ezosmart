@@ -1,0 +1,16 @@
+// scripts/deploy.js
+async function main () {
+  // We get the contract to deploy
+  const ezosmart = await ethers.getContractFactory('ezosmart');
+  console.log('Deploying ezosmart...');
+  const ezosmart = await ezosmart.deploy();
+  await ezosmart.deployed();
+  console.log('ezosmart deployed to:', 0x3EAD4A8bC39FF1fE7E17261b6c6492Cd8A16E26c);
+}
+
+main()
+  .then(() => process.exit(0))
+  .catch(error => {
+    console.error(error);
+    process.exit(1);
+  });
