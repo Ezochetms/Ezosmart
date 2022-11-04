@@ -1,0 +1,2 @@
+> (await ezosmart.retrieve()).toString()
+'21021000'
