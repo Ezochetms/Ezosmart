@@ -1,0 +1,4 @@
+> await ezosmart.store(21000)
+{
+  hash: '0x3d86c5c2c8a9f31bedb5859efa22d2d39a5ea049255628727207bc2856cce0d3',
+...
